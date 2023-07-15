@@ -7,16 +7,13 @@
 int main(void)
 {
 	int n;
+	char alph;
 
-	for (n = 0; n <= 9; n++)
-	{
+	for (n = 0; n <= 9; n++
 		putchar(n + '0');
-	}
 
-	for (n = 0; n < 6 ; n++)
-	{
-		putchar('a' + n);
-	}
+	for (alph = 'a'; alph < 'g'; alph++)
+		putchar(alph);
 
 putchar('\n');
 return (0);
