@@ -10,7 +10,7 @@ int main(void)
 	char alph;
 
 	for (n = 0; n <= 10; n++)
-		putchar('n' + 0);
+		putchar(n);
 
 	for (alph = 'a'; alph <= 'f'; alph++)
 		putchar(alph);
