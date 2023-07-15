@@ -10,10 +10,14 @@ int main(void)
 	char alph;
 
 	for (n = 0; n <= 10; n++)
+	{
 		putchar(n + '0');
+	}
 
 	for (alph = 'a'; alph < 'g'; alph++)
+	{
 		putchar(alph);
+	}
 
 putchar('\n');
 return (0);
