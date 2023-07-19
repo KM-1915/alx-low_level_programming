@@ -11,6 +11,8 @@ int _abs(int i)
 	if (i < 0)
 	{
 		absv = i * -1;
-	}
 	return (absv);
+	}
+	else 
+		return (i);
 }
