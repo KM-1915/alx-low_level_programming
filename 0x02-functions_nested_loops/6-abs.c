@@ -13,6 +13,6 @@ int _abs(int i)
 		absv = i * -1;
 	return (absv);
 	}
-	else 
+	else
 		return (i);
 }
