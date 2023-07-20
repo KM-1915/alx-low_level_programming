@@ -14,7 +14,7 @@ int main(void)
 		if (i == 0)
 			printf("%ld", n);
 		else if (i == 1)
-			printf(",%ld", m);
+			printf(", %ld", m);
 		else
 		{
 			m += n;
