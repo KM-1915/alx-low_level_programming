@@ -12,9 +12,9 @@ int main(void)
 	{
 		if ((n % 3 == 0) || (n % 5 == 0))
 		{
-			i += 0;
+			i += n;
 		}
-		i++;
+		n++;
 	}
 	putchar(i);
 
