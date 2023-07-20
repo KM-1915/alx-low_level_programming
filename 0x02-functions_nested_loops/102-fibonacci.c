@@ -21,7 +21,7 @@ int main(void)
 			n = m - n;
 			printf(", %ld", m);
 		}
-		1++;
+		i++;
 	}
 	printf("\n");
 	return (0);
