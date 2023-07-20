@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i = 0;
-	long n = 1, m = 2, sum = m;
+	int n = 1, m = 2, sum = m;
 
 	while (n + m <= 4000000)
 	{
@@ -20,6 +20,6 @@ int main(void)
 
 		++i;
 	}
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
