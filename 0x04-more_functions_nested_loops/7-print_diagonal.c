@@ -18,9 +18,8 @@ void print_diagonal(int n)
 		{
 			for (m = 0; m < i; m++)
 			{
-				_putchar(' ');
+				_putchar(92);
 			}
-			_putchar('\');
 			_putchar('\n');
 		}
 	}
