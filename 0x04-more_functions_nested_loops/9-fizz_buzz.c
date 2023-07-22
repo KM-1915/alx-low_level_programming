@@ -11,6 +11,10 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
+		else if (((i % 3) == 0) && ((i % 5) == 0))
+		{
+			printf("FizzBuzz");
+		}
 		if ((i % 3) == 0)
 		{
 			printf("Fizz");
@@ -18,10 +22,6 @@ int main(void)
 		else if ((i % 5) == 0)
 		{
 			printf("Buzz");
-		}
-		else if (((i % 3) == 0) && ((i % 5) == 0))
-		{
-			printf("FizzBuzz");
 		}
 		else
 		{
