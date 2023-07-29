@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		str[ind - 1] == ')' || str[ind - 1] == '{' ||
 		str[ind - 1] == '}' || ind == 0)
 			str[ind] -= ' ';
-		
+
 		ind++;
 	}
 	return (str);
