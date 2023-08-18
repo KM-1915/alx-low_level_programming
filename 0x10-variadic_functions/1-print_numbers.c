@@ -10,29 +10,23 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	char *num;
+	int num;
 	unsigned int i;
 	va_list arg;
-	
-	if (separator == NULL || *separator == 0)
-	{
-		num = "";
-	}
-	else
-	{
-		num = (char *) separator;
-	}
 
 	va_start(arg, n);
-	if (n > 0)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(arg, int));
-	}
+		{
+			num = va_arg(arg, int);
+			printf("%d", num);
+		}
 
-	for (i = 1; i < n; i++)
-	{
-		printf("%s%d", num, va_arg(arg, int));
+		if (i < n - 1 && separator != NULL)
+		{
+			printf("%s", separator);
+		}
 	}
-	printf("\n");
 	va_end(arg);
+	printf("\n");
 }
