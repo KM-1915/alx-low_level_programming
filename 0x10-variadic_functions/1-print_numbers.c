@@ -15,9 +15,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list arg;
 	
 	if (separator == NULL || *separator == 0)
+	{
 		num = "";
+	}
 	else
+	{
 		num = (char *) separator;
+	}
 
 	va_start(arg, n);
 	if (n > 0)
