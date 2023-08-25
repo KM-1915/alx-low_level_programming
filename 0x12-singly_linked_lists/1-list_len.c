@@ -8,13 +8,13 @@
  */
 size_t list_len(const list_t *h)
 {
-    size_t num = 0;
-    const list_t *elm = h;
+	size_t num = 0;
+	const list_t *elm = h;
 
-    while (elm != NULL)
-    {
-        num++;
-        elm = elm->next;
-    }
-    return (num);
+	while (elm != NULL)
+	{
+		num++;
+		elm = elm->next;
+	}
+	return (num);
 }
