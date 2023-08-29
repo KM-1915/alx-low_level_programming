@@ -16,13 +16,13 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
-void before_main();
-void __attribute__((constructor)) beforeMain();
+void before_main(void);
+void __attribute__((constructor)) before_main();
 int _putchar(char c);
 void free_list(list_t *head);
 list_t *add_node_end(list_t **head, const char *str);
