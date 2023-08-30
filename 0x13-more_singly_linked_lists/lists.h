@@ -1,8 +1,9 @@
 #ifndef LISTS_H_
 #define LISTS_H_
 
-#include <limits.h>
-#include<atdarg.h>
+#include<limits.h>
+#include<stdlib.h>
+#include<stdarg.h>
 #include<strings.h>
 #include<unistd.h>
 
