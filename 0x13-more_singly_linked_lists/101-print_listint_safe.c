@@ -7,7 +7,7 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *slow = head ,*fast = head;
+	const listint_t *slow = head , *fast = head;
 	size_t e = 0;
 	int lp = 0;
 
