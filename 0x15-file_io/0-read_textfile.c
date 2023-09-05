@@ -13,29 +13,33 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t x, i, n;
+	ssize_t file, i, n;
 	char *c;
 
 	c = malloc(letters);
 	if (c == NULL)
+	{
 		return (0);
+	}
 
 	if (filename == NULL)
+	{
 		return (0);
+	}
 
-	x = open(filename, O_RDONLY);
+	file = open(filename, O_RDONLY);
 
-	if (x == -1)
+	if (file == -1)
 	{
 		free(c);
 		return (0);
 	}
 
-	i = read(x, c, letters);
+	i = read(file, c, letters);
 
 	n = write(STDOUT_FILENO, c, i);
 
-	close(x);
+	close(file);
 
 	return (n);
 }
